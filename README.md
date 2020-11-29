@@ -115,7 +115,7 @@ The game has 5 states:
 * Game Over - This is where the user will see the score, hits, misses and highscore.
 
 
-The game will progress cyclically between these 5 states:\n
+The game will progress cyclically between these 5 states:  
 <img src="./images/Game_Cycle.png" alt="Image of Game_Cycle" width="600" height="400">
 
 This game runs on Mbed RTOS. There is a dedicated thread that updates the LCD display with the correct content. A switch statement is used to figure out the game state. The buttons are using pindetect library with call back functions. A Ticker is used to play music from flash memory ([How to play sound from flash](https://os.mbed.com/users/4180_1/notebook/using-flash-to-play-audio-clips/)).
